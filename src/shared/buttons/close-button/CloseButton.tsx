@@ -1,5 +1,6 @@
 import { FC, HTMLAttributes } from 'react'
 import { IoClose } from 'react-icons/io5'
+import { ButtonWithIcon } from '..'
 
 type Props = HTMLAttributes<HTMLButtonElement> & {
   onClick: () => void
@@ -7,8 +8,8 @@ type Props = HTMLAttributes<HTMLButtonElement> & {
 }
 export const CloseButton: FC<Props> = ({ onClick, size = '2em', ...props }) => {
   return (
-    <button onClick={onClick} {...props}>
+    <ButtonWithIcon onClick={onClick} {...props}>
       <IoClose size={size} />
-    </button>
+    </ButtonWithIcon>
   )
 }

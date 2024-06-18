@@ -1,15 +1,15 @@
-import type { FC, ReactNode } from 'react'
+import type { FC } from 'react'
 import { IoIosArrowBack } from 'react-icons/io'
+import { ButtonWithIcon } from '..'
 
 type Props = {
   onClick: () => void
-  icon?: ReactNode
 }
 
-export const BackButton: FC<Props> = ({ onClick, icon }) => {
+export const BackButton: FC<Props> = ({ onClick }) => {
   return (
-    <button style={{ padding: 0 }} onClick={onClick}>
-      {icon || <IoIosArrowBack size={'2em'} />}
-    </button>
+    <ButtonWithIcon onClick={onClick}>
+      <IoIosArrowBack size={'1.5em'} />
+    </ButtonWithIcon>
   )
 }

@@ -24,6 +24,10 @@
   position: fixed;
 }
 
+.burgerButton {
+  display: none;
+}
+
 @media screen and (max-width: 865px) {
   .navContent {
     padding: 5px 10px;
@@ -45,5 +49,9 @@
 
   .sideBarItem {
     display: block;
+  }
+
+  .burgerButton {
+    display: inherit;
   }
 }

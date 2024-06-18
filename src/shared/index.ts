@@ -9,6 +9,7 @@ import {
   UserInfoButton,
   CloseButton,
   SendMessageChatButton,
+  ButtonWithIcon,
 } from './buttons'
 import { CardsContainer } from './cards-container'
 import { Container, MContainer } from './container'
@@ -64,6 +65,7 @@ export {
   MTitle,
   Layout,
   ScrollTopButton,
+  ButtonWithIcon,
   SendMessageChatButton,
   BackButton,
   Toast,

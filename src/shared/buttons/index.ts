@@ -8,6 +8,7 @@ import { ScrollTopButton } from './scroll-top'
 import { ToggleLang } from './toggle-lang'
 import { CloseButton } from './close-button'
 import { SendMessageChatButton } from './send-message-chat-button'
+import { ButtonWithIcon } from "./button-with-icon/ButtonWithIcon"
 
 export {
   Button,
@@ -20,4 +21,5 @@ export {
   ToggleLang,
   CloseButton,
   SendMessageChatButton,
+  ButtonWithIcon,
 }

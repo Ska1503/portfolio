@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: var(--font-size-sm);
@@ -32,11 +32,11 @@ input,
 textarea {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-regular);
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
 
 button {
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
 
 .Toastify__progress-bar-theme--dark,

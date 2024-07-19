@@ -1,22 +1,25 @@
-import { useAnimation } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
-import { useEffect } from 'react'
+import { useAnimation, useInView } from 'framer-motion'
+import { useEffect, useRef } from 'react'
 
 type Props = {
   isAnimateOnce?: boolean
 }
 
 export const useAnimateDuringScroll = ({ isAnimateOnce = true }: Props) => {
+  const refInView = useRef<HTMLDivElement | null>(null)
   const controls = useAnimation()
-  const [refInView, inView] = useInView({ triggerOnce: isAnimateOnce })
+  const isInView = useInView(refInView, {
+    once: isAnimateOnce,
+    margin: '-100px',
+  })
 
   useEffect(() => {
-    if (inView) {
+    if (isInView) {
       controls.start({ opacity: 1 })
     } else {
       controls.start({ opacity: 0 })
     }
-  }, [controls, inView])
+  }, [controls, isInView])
 
   return { refInView, controls }
 }

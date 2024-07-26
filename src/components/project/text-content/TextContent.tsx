@@ -16,7 +16,9 @@ export const TextContent: FC<Props> = ({ text }) => {
     <>
       {quantityParagraph.map(({ text, id }) => (
         <li key={id}>
-          <Paragraph style={{ textAlign: 'left' }}>{text}</Paragraph>
+          <Paragraph style={{ textAlign: 'left', margin: '0 0 10px' }}>
+            {text}
+          </Paragraph>
         </li>
       ))}
     </>

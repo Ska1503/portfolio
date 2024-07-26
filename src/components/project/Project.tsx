@@ -1,7 +1,6 @@
 import { useGetProjectById, useNavigateTo, usePortfolioList } from 'src/hooks'
 import { useParams } from 'react-router-dom'
 import { Head } from './head/Head'
-import { Content } from './content/Content'
 import { FiExternalLink } from 'react-icons/fi'
 import { useTranslation } from 'react-i18next'
 import { HiMiniArrowLongRight, HiMiniArrowLongLeft } from 'react-icons/hi2'
@@ -16,6 +15,7 @@ import {
 import { ROUTES } from 'src/constants'
 import { classNames } from 'src/utils'
 import styles from './Project.module.css'
+import { Information } from './information/Information'
 
 export const Project = () => {
   const { t } = useTranslation()
@@ -67,7 +67,7 @@ export const Project = () => {
             <FiExternalLink size='.8em' />
           </a>
         </Title>
-        <Content aboutProject={data?.about} project={data} />
+        <Information aboutProject={data?.about} project={data} />
         <ul className={styles.stack}>
           {data?.about?.map((item, i) => (
             <StackList key={i} stackList={item?.stack} />

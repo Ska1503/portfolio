@@ -1,6 +1,7 @@
 export type AboutType = {
   paragraphFirst: TextType
   paragraphSecond: TextType
+  paragraphThird: TextType
   stack: string
 }
 

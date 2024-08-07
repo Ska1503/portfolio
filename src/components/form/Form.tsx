@@ -10,6 +10,7 @@ import {
 } from '../shared'
 import { useTranslation } from 'react-i18next'
 import { VALIDATE_EMAIL } from 'src/constants'
+import { FORM_FIELDS } from 'src/types'
 import styles from './Form.module.css'
 
 type Props = {
@@ -40,13 +41,13 @@ export const Form: FC<Props> = ({ onCloseModal }) => {
         <form onSubmit={handleSubmit(onSubmit)}>
           <Title tag='h2'>{t('form.TITLE')}</Title>
           <Input
-            {...register('nameSender', {
+            {...register(FORM_FIELDS.SENDER, {
               required: true,
               minLength: 3,
             })}
             id='form-input-name'
             type='text'
-            onChange={handleChange('nameSender')}
+            onChange={handleChange(FORM_FIELDS.SENDER)}
             error={!!errors.nameSender}
             errorText={
               errors.nameSender?.type === 'minLength'
@@ -57,7 +58,7 @@ export const Form: FC<Props> = ({ onCloseModal }) => {
             aria-label='Enter your name'
           />
           <Input
-            {...register('from', {
+            {...register(FORM_FIELDS.FROM, {
               required: t('form.error.ENTER_EMAIL'),
               pattern: {
                 value: VALIDATE_EMAIL,
@@ -66,18 +67,18 @@ export const Form: FC<Props> = ({ onCloseModal }) => {
             })}
             id='form-input-email'
             type='email'
-            onChange={handleChange('from')}
+            onChange={handleChange(FORM_FIELDS.FROM)}
             error={!!errors.from}
             errorText={errors.from?.message}
             placeholder={t('input.placeholder.YOUR_EMAIL')}
             aria-label='Enter your email'
           />
           <Textarea
-            {...register('text', { required: true, minLength: 10 })}
+            {...register(FORM_FIELDS.TEXT, { required: true, minLength: 10 })}
             rows={7}
             cols={50}
             id='form-textarea-message'
-            onChange={handleChange('text')}
+            onChange={handleChange(FORM_FIELDS.TEXT)}
             error={!!errors.text}
             errorText={
               errors.text?.type === 'minLength'

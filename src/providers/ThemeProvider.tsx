@@ -1,4 +1,4 @@
-import type { ReactNode, FC } from 'react'
+import type { ReactNode } from 'react'
 import { useEffect, createContext } from 'react'
 import { THEME } from 'src/constants'
 import { useLocalStorage } from 'src/hooks'
@@ -19,7 +19,7 @@ export const ThemeContext = createContext<ThemeContextProps>({
 
 const STORAGE_KEY = 'theme'
 
-export const ThemeProvider: FC<ThemeProvider> = ({ children }) => {
+export const ThemeProvider = ({ children }: ThemeProvider) => {
   const [theme, setTheme] = useLocalStorage(STORAGE_KEY, THEME.DARK)
 
   const changeTheme = (theme: string) => setTheme(theme)

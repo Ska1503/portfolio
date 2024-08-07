@@ -1,4 +1,4 @@
-import { FC, ReactNode } from 'react'
+import { ReactNode } from 'react'
 import { PersistGate } from 'redux-persist/integration/react'
 import { Provider } from 'react-redux'
 import { persist, store } from 'src/app'
@@ -8,7 +8,7 @@ type Props = {
   children: ReactNode
 }
 
-export const MainProvider: FC<Props> = ({ children }) => {
+export const MainProvider = ({ children }: Props) => {
   return (
     <Provider store={store}>
       <PersistGate persistor={persist}>

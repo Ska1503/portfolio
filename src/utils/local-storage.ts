@@ -1,6 +1,6 @@
-export const setStorageValue = (key: string, value: string) =>
+export const setStorageValue = (key: string, value: string): void =>
   localStorage.setItem(key, value)
 
-export const getStorageValue = (key: string) => localStorage.getItem(key)
+export const getStorageValue = (key: string): string | null => localStorage.getItem(key)
 
-export const removeStorageValue = (key: string) => localStorage.removeItem(key)
+export const removeStorageValue = (key: string): void => localStorage.removeItem(key)

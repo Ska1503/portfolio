@@ -1,12 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { ChatAuthUserType } from './types'
 
-type Props = {
-  name: string
-  userId: string
-  joined: boolean
-}
-
-const initialState: Props = {
+const initialState: ChatAuthUserType = {
   joined: false,
   name: '',
   userId: '',

@@ -1,11 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { MessageType } from 'src/types'
 
-type Props = {
-  messages: MessageType[]
-}
-
-const initialState: Props = {
+const initialState: Record<'messages', MessageType[]> = {
   messages: [],
 }
 

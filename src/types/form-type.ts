@@ -7,3 +7,9 @@ export type FormType = {
 }
 
 export type FormPayload = FormType
+
+export enum FORM_FIELDS {
+  SENDER = 'nameSender',
+  FROM = 'from',
+  TEXT = 'text',
+}

@@ -1,4 +1,5 @@
 export const COMPANY_URL = 'https://www.elementica.io/'
+export const COMPANY2_URL = 'https://www.urlaunched.com/'
 export const UDEMY_URL =
   'https://www.udemy.com/course/javascript_full/?couponCode=KEEPLEARNING'
 export const IMT_URL = 'https://imt.academy/'

@@ -22,7 +22,7 @@ export const SocialList: FC<Props> = ({ visibleIds }) => {
               className={styles.link}
               target='_blank'
               href={link}
-              rel='noreferrer'
+              rel='noreferrer nofollow'
               aria-label={name}
             >
               {icon}

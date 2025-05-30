@@ -10,6 +10,7 @@ export { default as mavenPageRirst } from './images/mav-page1.webp'
 export { default as mavenPageSecond } from './images/mav-page2.webp'
 export { default as chatPhoto } from './images/chat-img.webp'
 export { default as elementicaHomePage } from './images/elementica.webp'
+export { default as urlHomePage } from './images/url_img.webp'
 export { default as imtHomePage } from './images/imt.webp'
 export { default as udemyHomePage } from './images/udemy.webp'
 

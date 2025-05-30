@@ -1,7 +1,8 @@
 import { useEffect, useState, type FC } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
+// import { AnimatePresence, motion } from 'framer-motion'
 import { classNames } from 'src/utils'
 import styles from './FlipWord.module.css'
+import { Paragraph } from 'src/components/shared'
 
 type Props = {
   words: { id: number; content: string }[]
@@ -14,6 +15,7 @@ export const FlipWord: FC<Props> = ({
   classNameText,
   duration = 3000,
 }) => {
+  /*
   const [index, setIndex] = useState(0)
 
   useEffect(() => {
@@ -24,11 +26,11 @@ export const FlipWord: FC<Props> = ({
       })
     }, duration)
     return () => clearInterval(id)
-  }, [duration, words.length])
+  }, [duration, words.length]) */
 
   return (
     <div className={styles.flipWordContainer}>
-      <AnimatePresence>
+      {/* <AnimatePresence>
         <motion.b
           key={words[index].id}
           initial={{ y: 20, opacity: 0 }}
@@ -39,7 +41,8 @@ export const FlipWord: FC<Props> = ({
         >
           {words[index].content}
         </motion.b>
-      </AnimatePresence>
+      </AnimatePresence> */}
+      <Paragraph className={classNames(styles.words, classNameText)}>Frontend Developer</Paragraph>
     </div>
   )
 }

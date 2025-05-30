@@ -1,6 +1,6 @@
-import { COMPANY_URL } from 'src/constants'
+import { COMPANY2_URL, COMPANY_URL } from 'src/constants'
 import { useTranslation } from 'react-i18next'
-import { elementicaHomePage } from 'src/assets'
+import { elementicaHomePage, urlHomePage } from 'src/assets'
 import { ExperienceListType } from 'src/types'
 
 export const useWorkList = () => {
@@ -9,6 +9,16 @@ export const useWorkList = () => {
   const workList: ExperienceListType[] = [
     {
       id: 1,
+      place: t('workHistory.table.url.NAME'),
+      position: t('workHistory.table.url.POSITION'),
+      date: '2024 - Present',
+      title: t('workHistory.table.url.TITLE'),
+      url: COMPANY2_URL,
+      img: urlHomePage,
+      description: t('workHistory.table.url.DESCRIPTION'),
+    },
+    {
+      id: 2,
       place: t('workHistory.table.elementica.NAME'),
       position: t('workHistory.table.elementica.POSITION'),
       date: '2022 - 2024',
@@ -18,7 +28,7 @@ export const useWorkList = () => {
       description: t('workHistory.table.elementica.DESCRIPTION'),
     },
     {
-      id: 2,
+      id: 3,
       place: t('workHistory.table.freelance.NAME'),
       position: t('workHistory.table.freelance.POSITION'),
       date: '2021 - 2022',

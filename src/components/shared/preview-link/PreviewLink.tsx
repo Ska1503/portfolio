@@ -18,7 +18,7 @@ export const PreviewLink: FC<Props> = ({ href, imageSrc, children }) => {
       <a
         href={href}
         target='_blank'
-        rel='noreferrer'
+        rel='noreferrer nofollow'
         className={classNames(styles.link, href === '#' && styles.disabledLink)}
         onMouseEnter={() => setIsShown(true)}
         onMouseLeave={() => setIsShown(false)}

@@ -16,6 +16,8 @@
   padding: 4px 7px;
   border-radius: var(--border-radius);
   height: max-content;
+  min-width: 78px;
+  text-align: center;
 }
 
 .lineWrapper {

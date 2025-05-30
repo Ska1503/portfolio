@@ -114,5 +114,5 @@ export const Form: FC<Props> = ({ onCloseModal }) => {
 const additionalButtonStyles: CSSProperties = {
   width: '100%',
   padding: '10px',
-  fontSize: '12px',
+  fontSize: '14px',
 }

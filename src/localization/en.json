@@ -86,6 +86,12 @@
     "TITLE": "Work history",
     "SUBTITLE": "My professional journey and work experience",
     "table": {
+      "url": {
+        "NAME": "You are launched",
+        "POSITION": "Frontend developer",
+        "TITLE": "Creating web applications",
+        "DESCRIPTION": "Participated in team meetings, decision discussions, and task planning. Improved performance, optimized Lighthouse metrics, implemented API integrations and analytics tools. Developed reusable components and ensured responsive design."
+      },
       "elementica": {
         "NAME": "Elementica",
         "POSITION": "Frontend developer",
@@ -225,7 +231,7 @@
       "LANG_SUB_TITLE": "Languages",
       "QUALITIES_SUB_TITLE": "Professional qualities",
       "GOT_IN_DEV_SUB_TITLE": "How I got into development",
-      "MY_CAREER": "I'm a Frontend developer with 2 years of commercial experience in creating applications of varying complexity. I always adhere to best development practices.",
+      "MY_CAREER": "I'm a Frontend developer with 3 years of commercial experience in creating applications of varying complexity. I always adhere to best development practices.",
       "HOBBIES": "Sports, traveling, learning English, active leisure, and socializing with friends - these are the main aspects of my hobbies. I enjoy maintaining an active lifestyle, exploring new places, improving language skills, finding engaging ways to spend free time, and connecting with close friends.",
       "DEVELOPMENT": "My passion for development began with small projects and experiments. Over time, I realized that I wanted to delve deeper into this field and made it my profession. I continued to learn, attended courses and workshops to expand my knowledge and skills. Now, I am happy to share my experience and help create unique and functional web applications.",
       "QUALITIE_TEAMWORK": "Teamwork:",
